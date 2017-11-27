@@ -1,0 +1,21 @@
+{
+    "name": "porcheron/vui-corpus-builder",
+    "description": "Convert the VUI Excel XLSX corpus file into a open file formats.",
+    "type": "project",
+    "require": {
+        "jms/serializer": "^1.9",
+        "portphp/portphp": "^1.2.0",
+        "portphp/excel": "^2.0@dev"
+    },
+    "license": "MIT Licence",
+    "authors": [
+        {
+            "name": "Martin Porcheron",
+            "email": "martin-vuicorpusbuilder@porcheron.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {"Porcheron\\VuiCorpusBuilder\\": "src"}
+    }
+}
