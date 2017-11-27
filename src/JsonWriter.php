@@ -3,7 +3,7 @@
 /**
  * Write a JSON file.
  *
- * @author  Martin Porcheron <martin-corpusbuilder@porcheron.uk>
+ * @author  Martin Porcheron <martin-vuicorpusbuilder@porcheron.uk>
  * @license MIT
  */
 
@@ -61,6 +61,8 @@ class JsonWriter extends Writer {
 
     /**
      * Write the current fragment in the buffer to the file.
+     * 
+     * {@inheritDoc}
      */
     public function done() {
         if (parent::done() && !is_null($this->currentFragment)) {
