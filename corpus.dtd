@@ -1,0 +1,22 @@
+<!DOCTYPE corpus [
+    <!ELEMENT corpus (fragments)>
+    <!ELEMENT fragments (fragment*)>
+    <!ELEMENT fragment (file,timestamp,messages)>
+    <!ELEMENT file EMPTY>
+    <!ELEMENT timestamp EMPTY>
+    <!ELEMENT messages (message*)>
+    <!ELEMENT message EMPTY>
+
+    <!ATTLIST file
+       name         CDATA           #REQUIRED
+    >
+
+    <!ATTLIST timestamp
+       value        CDATA           #REQUIRED
+    >
+
+    <!ATTLIST message
+       request      CDATA           #REQUIRED
+       response     CDATA           #REQUIRED
+    >
+]>

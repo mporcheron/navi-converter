@@ -14,13 +14,13 @@ namespace Porcheron\VuiCorpusBuilder;
  */
 class JsonWriter extends Writer {
 
-    /** @var        \SplFileObject $file JSON file */
+    /** @var        \SplFileObject  $file               JSON file */
     private $file;
 
-    /** @var        mixed[] $currentFragment Fragment data to write (this is only written on close or the insertion of the next fragment). */
+    /** @var        mixed[]         $currentFragment    Fragment data to write (this is only written on close or the insertion of the next fragment) */
     private $currentFragment;
 
-    /** @var        int $writtenFragment Number of fragments written. */
+    /** @var        int             $writtenFragment    Number of fragments written */
     private $writtenFragments = 0;
 
     /**
